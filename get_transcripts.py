@@ -104,7 +104,7 @@ def main():
       break
     
     for item in json_obj:
-      transcripts[item['id']]={'id':item['id'], 'transcript':item['transcript']}
+      transcripts[item['id']]={'id':str(item['id']), 'transcript':item['transcript']}
    
     # Comment following 2 lines to remove upper end limit
     if len(transcripts) >= 200:
